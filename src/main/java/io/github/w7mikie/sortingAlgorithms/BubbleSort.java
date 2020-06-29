@@ -1,4 +1,4 @@
-package io.hithub.w7mikie.sortingAlgorithms;
+package io.github.w7mikie.sortingAlgorithms;
 
 public class BubbleSort {
 
