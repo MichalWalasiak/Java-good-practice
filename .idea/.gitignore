@@ -9,3 +9,4 @@ vcs.xml
 /Project.xml
 /Java-good-practice.iml
 /codeStyles/Project.xml
+*.target
