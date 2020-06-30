@@ -6,6 +6,17 @@ public class MergeSort {
 
     }
 
+    public static void mergeSort(int[] array, int start, int end) {
+        if (end - start < 2){
+            return;
+        }
+
+        int mid = (end - start) / 2;
+        mergeSort(array, start, mid);
+        mergeSort(array, mid, end);
+        merge(array, start, mid, end);
+    }
+
     public static void merge(int[] array, int start, int mid, int end) {
         if (array[mid - 1] >= array[mid]){
             return;
