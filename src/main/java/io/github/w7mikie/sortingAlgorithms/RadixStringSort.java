@@ -4,6 +4,13 @@ public class RadixStringSort {
 
     public static void main(String[] args) {
 
+        String[] string = {"abdss", "cdrfs", "abcfe", "cdrft"};
+
+        radixStringSort(string, 26, 4);
+
+        for (int i = 0; i < string.length; i++){
+            System.out.println(string[i]);
+        }
     }
 
     public static void radixStringSort(String[] array, int radix, int width) {
@@ -20,7 +27,7 @@ public class RadixStringSort {
             countArray[getIndex(position, value)]++;
         }
 
-        for(int j = 1; j < radix; j--){
+        for(int j = 1; j < radix; j++){
             countArray[j] += countArray[j - 1];
         }
 
