@@ -6,6 +6,12 @@ public class RadixStringSort {
 
     }
 
+    public static void radixStringSort(String[] array, int radix, int width) {
+            for (int i = width - 1; i >= 0; i--){
+                radixStringSingleSort(array, i, radix);
+            }
+    }
+
     public static void radixStringSingleSort(String[] array, int position, int radix) {
         int numItems = array.length;
         int[] countArray = new int[radix];
