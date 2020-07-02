@@ -4,6 +4,13 @@ public class RadixSort {
 
     public static void main(String[] args) {
 
+        int[] ints = {1545, 7485, 1441, 1441, 5458};
+
+        radixSort(ints, 10, 4);
+
+        for (int i = 0; i < ints.length; i++){
+            System.out.println(ints[i]);
+        }
     }
 
     public static void radixSort(int[] arraay, int radix, int width) {
@@ -32,7 +39,6 @@ public class RadixSort {
             for (int tempIndex = 0; tempIndex < numItems; tempIndex++){
                 array[tempIndex] = temp[tempIndex];
             }
-
     }
 
     public static int getDigit(int position, int value, int radix) {
