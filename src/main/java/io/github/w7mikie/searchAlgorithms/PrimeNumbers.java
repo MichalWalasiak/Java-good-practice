@@ -24,6 +24,5 @@ public class PrimeNumbers {
                 System.out.println("prime number is " + x);
             }
         }
-
     }
 }
