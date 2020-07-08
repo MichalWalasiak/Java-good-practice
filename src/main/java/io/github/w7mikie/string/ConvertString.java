@@ -5,6 +5,7 @@ public class ConvertString {
     public static void main(String[] args) {
 
 
+
     }
 
     public static boolean StringConvertToBoolean(String str) {
@@ -15,9 +16,9 @@ public class ConvertString {
         boolean bol = Boolean.parseBoolean(str);
 
         if (bol){
-            System.out.println("ok");
+            System.out.println("value of bol is true");
         }else
-            System.out.println("nie ok");
+            System.out.println("value of bol is false");
 
         return bol;
     }
