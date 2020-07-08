@@ -21,4 +21,10 @@ public class ConvertString {
 
         return bol;
     }
+
+    public static int StringConvertToInteger(String str) {
+
+        Integer num = Integer.valueOf(str);
+        return num;
+    }
 }
