@@ -1,0 +1,24 @@
+package io.github.w7mikie.string;
+
+public class ConvertString {
+
+    public static void main(String[] args) {
+
+
+    }
+
+    public static boolean StringConvertToBoolean(String str) {
+        if (!(str.equals("True") || str.equals("False"))){
+            throw new IllegalArgumentException("wrong argument");
+        }
+
+        boolean bol = Boolean.parseBoolean(str);
+
+        if (bol){
+            System.out.println("ok");
+        }else
+            System.out.println("nie ok");
+
+        return bol;
+    }
+}
