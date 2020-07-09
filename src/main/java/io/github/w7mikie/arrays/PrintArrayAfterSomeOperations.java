@@ -20,12 +20,10 @@ public class PrintArrayAfterSomeOperations {
         }
 
         if (k != 0){
-
             if (k % 2 == 1){
                 for (int i = 0; i < n; i++) {
                     array[i] = maxEle - array[i];
                 }
-
             }
             else{
                 for (int i = 0; i < n; i++) {
