@@ -22,15 +22,15 @@ public class PalindromeNumber {
         if (input < 0){
             return false;
         }
-        int palindromr = 0;
+        int palindrom = 0;
         int mockInput = input;
         while (mockInput != 0) {
 
-            palindromr = palindromr * 10 + mockInput % 10;
+            palindrom = palindrom * 10 + mockInput % 10;
             mockInput = mockInput / 10;
         }
 
-        if (input.equals(palindromr)){
+        if (input.equals(palindrom)){
             return true;
         }
         return false;
