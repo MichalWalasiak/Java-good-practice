@@ -22,12 +22,11 @@ public class PalindromeNumber {
         }
         int palindrom = 0;
         int mockInput = input;
-        while (mockInput != 0) {
 
+        while (mockInput != 0) {
             palindrom = palindrom * 10 + mockInput % 10;
             mockInput = mockInput / 10;
         }
-
         return input.equals(palindrom);
     }
 }
