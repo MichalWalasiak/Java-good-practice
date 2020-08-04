@@ -4,18 +4,16 @@ public class PalindromeNumber {
 
     public static void main(String[] args) {
 
-
+        PalindromeNumber palindromeNumber = new PalindromeNumber();
+        System.out.println(palindromeNumber.isPalindrome(323));
 
     }
 
-    public boolean isNumberPalindrome(Integer input) {
+    public boolean isPalindromeNumber(Integer input) {
         String palindrome = new StringBuilder().append(Math.abs(input)).reverse().toString();
         Integer isPalindrome = Integer.parseInt(palindrome);
 
-        if (input.equals(isPalindrome)){
-            return true;
-        }
-        return false;
+        return input.equals(isPalindrome);
     }
 
     public boolean isPalindrome(Integer input) {
@@ -30,9 +28,6 @@ public class PalindromeNumber {
             mockInput = mockInput / 10;
         }
 
-        if (input.equals(palindrom)){
-            return true;
-        }
-        return false;
+        return input.equals(palindrom);
     }
 }
