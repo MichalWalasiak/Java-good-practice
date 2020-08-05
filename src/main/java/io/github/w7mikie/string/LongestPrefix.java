@@ -12,13 +12,14 @@ public class LongestPrefix {
             return "";
         }
         String prefix = args[0];
-        for (int i = 1; i < args.length; i++)
-            while (args[i].indexOf(prefix) != 0){
+        for(int i = 1; i < args.length; i++){
+            while (args[i].indexOf(prefix) !=0){
                 prefix = prefix.substring(0, prefix.length() - 1);
                 if (prefix.isEmpty()){
                     return "";
                 }
             }
+        }
         return prefix;
     }
 }
